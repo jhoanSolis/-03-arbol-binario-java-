@@ -1,0 +1,46 @@
+=== ORGANIGRAMA TECNOPC ===
+Gerente General  [RAÍZ, nivel 0]
+├── Director Comercial  [INTERNO, nivel 1]
+│   ├── Jefe de Ventas  [INTERNO, nivel 2]
+│   │   ├── Asesor de Ventas  [HOJA, nivel 3]
+│   │   └── Cajero  [HOJA, nivel 3]
+│   └── Jefe de Mercadeo  [HOJA, nivel 2]
+├── Director Técnico  [INTERNO, nivel 1]
+│   ├── Jefe de Soporte  [INTERNO, nivel 2]
+│   │   └── Técnico de Soporte  [HOJA, nivel 3]
+│   └── Jefe de Ensamble  [INTERNO, nivel 2]
+│       └── Técnico Ensamblador  [HOJA, nivel 3]
+└── Director Administrativo  [INTERNO, nivel 1]
+    ├── Contador  [HOJA, nivel 2]
+    └── Jefe de Bodega  [INTERNO, nivel 2]
+        └── Auxiliar de Bodega  [HOJA, nivel 3]
+
+=== PROPIEDADES ===
+Total de cargos (nodos): 15
+Hojas: 7
+Grado del árbol: 3
+Altura: 3
+Niveles: 4
+
+=== TABLA DE MÉTRICAS ===
+Nodo                     Tipo     Grado  Profundidad  Altura
+------------------------------------------------------------
+Gerente General          RAÍZ     3      0            3     
+Director Comercial       INTERNO  2      1            2     
+Jefe de Ventas           INTERNO  2      2            1     
+Asesor de Ventas         HOJA     0      3            0     
+Cajero                   HOJA     0      3            0     
+Jefe de Mercadeo         HOJA     0      2            0     
+Director Técnico         INTERNO  2      1            2     
+Jefe de Soporte          INTERNO  1      2            1     
+Técnico de Soporte       HOJA     0      3            0     
+Jefe de Ensamble         INTERNO  1      2            1     
+Técnico Ensamblador      HOJA     0      3            0     
+Director Administrativo  INTERNO  2      1            2     
+Contador                 HOJA     0      2            0     
+Jefe de Bodega           INTERNO  1      2            1     
+Auxiliar de Bodega       HOJA     0      3            0     
+
+=== LÍNEA DE MANDO ===
+Gerente General -> Director Técnico -> Jefe de Soporte -> Técnico de Soporte
+Longitud: 3 aristas

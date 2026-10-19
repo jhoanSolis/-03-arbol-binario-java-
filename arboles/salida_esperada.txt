@@ -1,0 +1,98 @@
+=== CATÁLOGO TECNOPC ===
+TecnoPC  [RAÍZ, nivel 0]
+├── Computadores  [INTERNO, nivel 1]
+│   ├── Portátiles  [INTERNO, nivel 2]
+│   │   ├── Gamer  [HOJA, nivel 3]
+│   │   └── Oficina  [HOJA, nivel 3]
+│   └── Escritorio  [HOJA, nivel 2]
+├── Componentes  [INTERNO, nivel 1]
+│   ├── Procesadores  [INTERNO, nivel 2]
+│   │   ├── Intel  [HOJA, nivel 3]
+│   │   └── AMD  [HOJA, nivel 3]
+│   └── Memoria RAM  [HOJA, nivel 2]
+├── Periféricos  [INTERNO, nivel 1]
+│   └── Monitores  [HOJA, nivel 2]
+└── Servicios  [INTERNO, nivel 1]
+    └── Soporte técnico  [HOJA, nivel 2]
+
+=== PROPIEDADES DEL ÁRBOL ===
+Raíz: TecnoPC
+Total de nodos: 15
+Hojas: 8
+Nodos internos (incluye la raíz): 7
+Grado del árbol: 4
+Altura del árbol: 3
+Número de niveles: 4
+
+=== TABLA DE MÉTRICAS ===
+Nodo                     Tipo     Grado  Profundidad  Altura
+------------------------------------------------------------
+TecnoPC                  RAÍZ     4      0            3     
+Computadores             INTERNO  2      1            2     
+Portátiles               INTERNO  2      2            1     
+Gamer                    HOJA     0      3            0     
+Oficina                  HOJA     0      3            0     
+Escritorio               HOJA     0      2            0     
+Componentes              INTERNO  2      1            2     
+Procesadores             INTERNO  2      2            1     
+Intel                    HOJA     0      3            0     
+AMD                      HOJA     0      3            0     
+Memoria RAM              HOJA     0      2            0     
+Periféricos              INTERNO  1      1            1     
+Monitores                HOJA     0      2            0     
+Servicios                INTERNO  1      1            1     
+Soporte técnico          HOJA     0      2            0     
+
+=== PROFUNDIDAD DE CINCO NODOS ===
+TecnoPC            -> 0
+Computadores       -> 1
+Portátiles         -> 2
+Gamer              -> 3
+Soporte técnico    -> 2
+
+=== PROFUNDIDAD DE CADA HOJA ===
+Gamer              -> 3
+Oficina            -> 3
+Escritorio         -> 2
+Intel              -> 3
+AMD                -> 3
+Memoria RAM        -> 2
+Monitores          -> 2
+Soporte técnico    -> 2
+
+=== RELACIONES DE PARENTESCO ===
+Portátiles:
+   Padre      : Computadores
+   Hijos      : [Gamer, Oficina]
+   Hermanos   : [Escritorio]
+   Ancestros  : [Computadores, TecnoPC]
+   Descendientes: 2
+Procesadores:
+   Padre      : Componentes
+   Hijos      : [Intel, AMD]
+   Hermanos   : [Memoria RAM]
+   Ancestros  : [Componentes, TecnoPC]
+   Descendientes: 2
+Gamer:
+   Padre      : Portátiles
+   Hijos      : []
+   Hermanos   : [Oficina]
+   Ancestros  : [Portátiles, Computadores, TecnoPC]
+   Descendientes: 0
+
+=== CAMINOS ===
+TecnoPC -> Computadores -> Portátiles -> Gamer
+Longitud: 3 aristas
+TecnoPC -> Servicios -> Soporte técnico
+Longitud: 2 aristas
+
+=== COMPARACIÓN MANUAL VS. JAVA ===
+Total de nodos: manual = 15, Java = 15  -> COINCIDEN
+Hojas: manual = 8, Java = 8  -> COINCIDEN
+Grado del árbol: manual = 4, Java = 4  -> COINCIDEN
+Altura del árbol: manual = 3, Java = 3  -> COINCIDEN
+
+=== AGREGANDO UN NUEVO NIVEL ===
+Altura ANTES  -> TecnoPC: 3 | Computadores: 2 | Servicios: 1
+Altura DESPUÉS-> TecnoPC: 4 | Computadores: 3 | Servicios: 1
+Número de niveles ahora: 5
